@@ -1,3 +1,5 @@
+# 7 Diving Deeper into Components & React Internals
+
 ## 103 More on the React ref API (16.3)
 
 ### new way of rendering references
