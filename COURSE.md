@@ -1,10 +1,38 @@
-## Test Code
-```bash
-echo "hello"
-```
+## 103 More on the React ref API (16.3)
+
+### new way of rendering references
 ```javascript
-console.log("hello")
+// in constructor
+this.inputElement = React.createRef();
+
+// usage in element
+ref={this.inputElement}
 ```
+
+### forward Refs
+- a tunnel through the higher order components
+- forward refs are only used for higher order components which want to tunnel
+- usually one uses normal refs
+```javascript
+const withClass = (WrappedComponent, className) => {
+    const WithClass = class extends Component {
+        render() {
+            return (
+                <div className={className}>
+                    <WrappedComponent
+                        ref={this.props.forwardedRef}
+                        {...this.props} />
+                </div>
+            )
+        }
+    }
+
+    return React.forwardRef((props, ref) => {
+        return <WithClass {...props} forwardedRef={ref} />;
+    });
+}
+```
+
 
 ## 102 Using References (“ref”) → focusing
 - References are only available in stateful components
