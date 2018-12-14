@@ -1,20 +1,21 @@
-# test
-Here's our logo (hover to see the title text):
+## Test Code
+```bash
+echo "hello"
+```
+```javascript
+console.log("hello")
+```
 
-Inline-style: 
-![alt text](course/pics/test.png)
-![test](course/pics/test.png)
-
-# 102 Using References (“ref”) → focusing
+## 102 Using References (“ref”) → focusing
 - References are only available in stateful components
 - Don't get lazy and it use for other things
   - focus()
   - Media playback
 
-# 101 Available PropTypes
+## 101 Available PropTypes
 - https://reactjs.org/docs/typechecking-with-proptypes.html
 
-## types
+### types
 ```javascript
 import PropTypes from 'prop-types';
  
@@ -97,7 +98,7 @@ MyComponent.propTypes = {
   })
 };
 ```
-## Requiring Single Child
+### Requiring Single Child
 - With PropTypes.element you can specify that only a single child can be passed to a component as children.
 ```javascript
 import PropTypes from 'prop-types';
@@ -119,7 +120,7 @@ MyComponent.propTypes = {
 };
 ```
 
-## Default Prop Values
+### Default Prop Values
 - You can define default values for your props by assigning to the special defaultProps property:
 ```javascript
 class Greeting extends React.Component {
