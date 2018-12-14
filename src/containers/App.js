@@ -10,6 +10,16 @@ class App extends PureComponent {
     constructor(props) {
         super(props);
         console.log('[App.js] Inside Constructor');
+        this.state = {
+            persons: [
+                {id:'1b', name: 'Max', age: 28},
+                {id:'1a', name: 'Man', age: 29},
+                {id:'1c', name: 'Maa', age: 30}
+            ],
+            otherState: 'some other ',
+            showPersons: false,
+            toggleClicked: 0
+        }
     }
 
     componentWillMount() {
@@ -43,20 +53,15 @@ class App extends PureComponent {
         console.log('[Update App.js] Inside componentDidUpdate()');
     }
 
-    state = {
-        persons: [
-            {id:'1b', name: 'Max', age: 28},
-            {id:'1a', name: 'Man', age: 29},
-            {id:'1c', name: 'Maa', age: 30}
-        ],
-        otherState: 'some other ',
-        showPersons: false,
-    }
 
     togglePersonsHandler = () => {
-        console.log("in");
         const doesShow = this.state.showPersons;
-        this.setState({showPersons: !doesShow});
+        this.setState(( prevState, props ) => {
+            return {
+                showPersons: !doesShow,
+                toggleClicked: prevState.toggleClicked + 1
+            }
+        });
     }
 
     deletePersonHandler = (personsIndex) => {
