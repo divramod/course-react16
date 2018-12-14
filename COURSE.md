@@ -3,6 +3,7 @@ Here's our logo (hover to see the title text):
 
 Inline-style: 
 ![alt text](course/pics/test.png)
+![test](course/pics/test.png)
 
 # 102 Using References (“ref”) → focusing
 - References are only available in stateful components
