@@ -1,3 +1,9 @@
+# 102 Using References (“ref”) → focusing
+- References are only available in stateful components
+- Don't get lazy and it use for other things
+  - focus()
+  - Media playback
+
 # 101 Available PropTypes
 - https://reactjs.org/docs/typechecking-with-proptypes.html
 

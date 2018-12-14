@@ -16,6 +16,9 @@ class Person extends Component {
 
     componentDidMount() {
         console.log('[Person.js] Inside componentDidMount()');
+        if(this.props.position === 0) {
+            this.inputElement.focus()
+        }
     }
 
     componentWillUnmount() {
@@ -32,8 +35,12 @@ class Person extends Component {
                 <p>I'm {this.props.name}</p>
                 <p>I'm {this.props.age}</p>
                 <p>{this.props.children}</p>
-                <input onChange={this.props.changed} value={this.props.name} />
-            </Aux>
+                <input
+                    ref={(inp) => { this.inputElement = inp }}
+                    type="text"
+                    onChange={this.props.changed}
+                    value={this.props.name} />
+                </Aux>
         )
     }
 }
