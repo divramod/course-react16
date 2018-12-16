@@ -4,7 +4,7 @@
 1. Component Tree / Component Structure
 2. Application State (Data)
 3. Components vs Containers
-  - stateful vs functional
+    - stateful vs functional
 
 ![planning a react app](course/pics/111-1.png)
 
