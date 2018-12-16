@@ -1,5 +1,8 @@
 # 8  Real App: The Burger Builder (Basic Version)
 
+# 117 Adding a Dynamic Ingredient Component
+- good practise to create granular components and not big chunks
+
 # 116 Starting Implementation of The Burger Builder
 
 # 115 Creating a Layout Component
