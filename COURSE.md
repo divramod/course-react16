@@ -1,5 +1,40 @@
 # 7 Diving Deeper into Components & React Internals
 
+## 105 More on the Context API (React 16.6)
+- new feature, easier usage
+- 
+```javascript
+// App.js
+toggleAuth = () => {
+    this.setState(prevState => {
+        return {
+            isAuth: !prevState.isAuth
+        }
+    })
+}
+
+// Login.js
+import AuthContext from '../auth-context'
+class Login extends Component {
+    static contextType = AuthContext;
+
+    render() {
+        (
+            <button onClick={this.context.toggleAuth}>
+                {this.context.isAuth = 'Logout' : 'Login'}
+            </button>
+        )
+    }
+}
+
+// auth-context.js
+export default React.createContext({
+    isAuth: false,
+    toggleAuth: () => {}
+})
+```
+
+
 ## 104 The Context API (React 16.3)
 - a greate tool to pass global state around in your app
 - works with providers or consumers
