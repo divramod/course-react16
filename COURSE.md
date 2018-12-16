@@ -1,5 +1,17 @@
 # 7 Diving Deeper into Components & React Internals
 
+## 107 The "memo" Method (React 16.6)
+- how to effectivly rerender your component
+- PureComponent: only rerender when something changed
+- now you can also optimize functional components
+```javascript
+export default React.memo(cockpit);
+```
+- now only when props really change, the component will be rerendered
+- props will only be compared on a shallow level (no deep checking is done) but if toplevel value changed, than it is rerendered
+- it does not always makes sense
+    - if a component must be rerendered every time
+
 ## 106 Updated Lifecycle Hooks (React 16.3)
 - discourage of use of some hooks
   - componentWillMount
