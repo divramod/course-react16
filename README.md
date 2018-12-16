@@ -1,5 +1,8 @@
 # 8  Real App: The Burger Builder (Basic Version)
 
+# 113 Planning the State
+![planning a react app](course/pics/113-1.png)
+
 # 112 Planning our App - Layout and Component Tree
 ![planning a react app](course/pics/112-1.png)
 
