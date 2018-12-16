@@ -1,5 +1,10 @@
 # 7 Diving Deeper into Components & React Internals
 
+## 108 Wrap Up (7 Diving Deeper into Components & React Internals)
+- a lot of theory
+- its important to understand how it works
+- hooks/lifecycles, ...
+
 ## 107 The "memo" Method (React 16.6)
 - how to effectivly rerender your component
 - PureComponent: only rerender when something changed
