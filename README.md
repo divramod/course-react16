@@ -1,3 +1,9 @@
+# 8  Real App: The Burger Builder (Basic Version)
+
+# 110 Module Introduction (8  Real App: The Burger Builder (Basic Version)
+- time to build a real react application
+- learn all concepts
+
 # 7 Diving Deeper into Components & React Internals
 
 ## 109 Useful Resources & Links (7 Diving Deeper into Components & React Internals)
