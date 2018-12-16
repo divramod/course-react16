@@ -1,5 +1,8 @@
 # 8  Real App: The Burger Builder (Basic Version)
 
+# 112 Planning our App - Layout and Component Tree
+![planning a react app](course/pics/112-1.png)
+
 # 111 Planning an App in React - Core Steps
 ![planning a react app](course/pics/111-1.png)
 1. Component Tree / Component Structure
