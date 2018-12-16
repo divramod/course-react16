@@ -2,6 +2,8 @@
 
 # 114 Setting up the Project
 - want to use css modules so we have to **eject** the project
+- other fond Open Sans (bold 700)
+- https://fonts.google.com/
 
 # 113 Planning the State
 ![planning a react app](course/pics/113-1.png)
