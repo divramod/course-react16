@@ -1,5 +1,8 @@
 # 8  Real App: The Burger Builder (Basic Version)
 
+# 114 Setting up the Project
+- want to use css modules so we have to **eject** the project
+
 # 113 Planning the State
 ![planning a react app](course/pics/113-1.png)
 
