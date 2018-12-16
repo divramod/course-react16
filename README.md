@@ -1,5 +1,10 @@
 # 8  Real App: The Burger Builder (Basic Version)
 
+# 115 Creating a Layout Component
+- seperate component for layout
+- use higher order compoent [Aux](code/src/hoc/Aux.js)
+- added font Open Sans
+
 # 114 Setting up the Project
 - want to use css modules so we have to **eject** the project
 - other fond Open Sans (bold 700)
