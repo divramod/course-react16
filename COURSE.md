@@ -1,5 +1,18 @@
 # 7 Diving Deeper into Components & React Internals
 
+## 106 Updated Lifecycle Hooks (React 16.3)
+- discourage of use of some hooks
+  - componentWillMount
+  - componentWillUpdate
+  - compoenntWillReceiveProps
+- were used on a wrong way
+- 2 new ones
+    - ```static getDerivedStateFromProps(nextProps, prevState)```
+        - do not overuse
+    - ```getSnapshotBeforeUpdate()```
+        - use for example to save current scrolling posistion (see official docs for example)
+- you shouldnt couple your state to props
+
 ## 105 More on the Context API (React 16.6)
 - new feature, easier usage
 - 
