@@ -1,5 +1,27 @@
 # 7 Diving Deeper into Components & React Internals
 
+## 104 The Context API (React 16.3)
+- a greate tool to pass global state around in your app
+- works with providers or consumers
+  - in app.js we provide
+    - to all child components, no matter on which level they are
+  - in others we consume
+- we can use a component
+```javascript
+
+// Provide
+export const AuthContext = React.createContext(false);
+<AuthContext.Provider value={this.state.authenticated}>
+    {persons}
+</AuthContext.Provider>
+
+// Consume
+import { AuthContext } from '../../../containers/App'
+<AuthContext.Consumer>
+    {auth => auth ? <p>I'm authenticated</p> : null}
+</AuthContext.Consumer>
+```
+
 ## 103 More on the React ref API (16.3)
 
 ### new way of rendering references
