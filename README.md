@@ -1,5 +1,7 @@
 # 8  Real App: The Burger Builder (Basic Version)
 
+# 116 Starting Implementation of The Burger Builder
+
 # 115 Creating a Layout Component
 - seperate component for layout
 - use higher order compoent [Aux](code/src/hoc/Aux.js)
