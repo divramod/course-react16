@@ -1,18 +1,40 @@
+# 27 Next Steps and Course Roadmap
+# 26 Bonus: Building the Burger CSS
+# 25 Bonus: A Brief Introduction to Redux Saga
+# 24 Bonus: Animations in React Apps
+# 23 Bonus: Next.js
+# 22 Bonus: Working with Webpack
+# 21 Deploying the App to the Web
+# 20 Testing
+# 19 Improving our Burger Project
+# 18 Adding Authentication to our Burger Project
+# 17 Redux Advanced: Burger Project
+# 16 Redux Advanced
+# 15 Adding Reduc to our Project
+# 14 Redux
+# 13 Forms and Form Validation
+# 12 Adding Routing to our Burger Project
+# 11 Multi-Page-Feeling in a Single-Page-App: Routing
+# 10 Burger Builder Project: Accessing a Server
+# 9 Reaching out to the Web (Http / Ajax)
+
 # 8  Real App: The Burger Builder (Basic Version)
 
-# 124 Connecting State to Build Controls
+## 125 Removing Ingredients savely
+
+## 124 Connecting State to Build Controls
 - name global constants in capital letters
 - onClick handler is from react
 
-# 123 Outputting Multiple Build Controls
+## 123 Outputting Multiple Build Controls
 
-# 122 Adding the Build Control Component
+## 122 Adding the Build Control Component
 
-# 121 Calculating the Ingredient Sum Dynamically
+## 121 Calculating the Ingredient Sum Dynamically
 - make use of reduce https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 - make use of map https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
-# 120 Outputting Burger Ingredients Dynamically
+## 120 Outputting Burger Ingredients Dynamically
 - transform object into array
 - ```object.keys(props.ingredients)```
 - ```Array()``` method for 
@@ -25,41 +47,41 @@ const transformedIngredients =
     });
 ```
 
-# 119 Starting the Burger Component
+## 119 Starting the Burger Component
 - 1.2 scales based on the user selected size
 
-# 118 Adding Prop Type Validation
+## 118 Adding Prop Type Validation
 - prop-types can only be used on class components
 
-# 117 Adding a Dynamic Ingredient Component
+## 117 Adding a Dynamic Ingredient Component
 - good practise to create granular components and not big chunks
 
-# 116 Starting Implementation of The Burger Builder
+## 116 Starting Implementation of The Burger Builder
 
-# 115 Creating a Layout Component
+## 115 Creating a Layout Component
 - seperate component for layout
 - use higher order compoent [Aux](code/src/hoc/Aux.js)
 - added font Open Sans
 
-# 114 Setting up the Project
+## 114 Setting up the Project
 - want to use css modules so we have to **eject** the project
 - other fond Open Sans (bold 700)
 - https://fonts.google.com/
 
-# 113 Planning the State
+## 113 Planning the State
 ![planning a react app](course/pics/113-1.png)
 
-# 112 Planning our App - Layout and Component Tree
+## 112 Planning our App - Layout and Component Tree
 ![planning a react app](course/pics/112-1.png)
 
-# 111 Planning an App in React - Core Steps
+## 111 Planning an App in React - Core Steps
 ![planning a react app](course/pics/111-1.png)
 1. Component Tree / Component Structure
 2. Application State (Data)
 3. Components vs Containers
     - stateful vs functional
 
-# 110 Module Introduction (8  Real App: The Burger Builder (Basic Version)
+## 110 Module Introduction (8  Real App: The Burger Builder (Basic Version)
 - time to build a real react application
 - learn all concepts
 
