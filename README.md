@@ -1,5 +1,18 @@
 # 8  Real App: The Burger Builder (Basic Version)
 
+# 120 Outputting Burger Ingredients Dynamically
+- transform object into array
+- ```object.keys(props.ingredients)```
+- ```Array()``` method for 
+```javascript
+const transformedIngredients =
+    Object.keys(props.ingredients).map((igKey) => {
+        return [...Array(props.ingredients[igKey])].map((_, i) => {
+            return <BurgerIngredient key={igKey + i} type={igKey} />
+        });
+    });
+```
+
 # 119 Starting the Burger Component
 - 1.2 scales based on the user selected size
 
