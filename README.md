@@ -1,5 +1,8 @@
 # 8  Real App: The Burger Builder (Basic Version)
 
+# 119 Starting the Burger Component
+- 1.2 scales based on the user selected size
+
 # 118 Adding Prop Type Validation
 - prop-types can only be used on class components
 
