@@ -1,5 +1,9 @@
 # 8  Real App: The Burger Builder (Basic Version)
 
+# 124 Connecting State to Build Controls
+- name global constants in capital letters
+- onClick handler is from react
+
 # 123 Outputting Multiple Build Controls
 
 # 122 Adding the Build Control Component
