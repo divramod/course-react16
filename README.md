@@ -1,5 +1,8 @@
 # 8  Real App: The Burger Builder (Basic Version)
 
+# 118 Adding Prop Type Validation
+- prop-types can only be used on class components
+
 # 117 Adding a Dynamic Ingredient Component
 - good practise to create granular components and not big chunks
 
