@@ -1,5 +1,10 @@
 # 8  Real App: The Burger Builder (Basic Version)
 
+# 121 Calculating the Ingredient Sum Dynamically
+- make use of reduce https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+- make use of map https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+
 # 120 Outputting Burger Ingredients Dynamically
 - transform object into array
 - ```object.keys(props.ingredients)```
