@@ -20,6 +20,11 @@
 
 # 8  Real App: The Burger Builder (Basic Version)
 
+## 126 Displaying and Updating the Burger Price
+```html
+<strong>{props.price.toFixed(2)}
+```
+
 ## 125 Removing Ingredients savely
 
 ## 124 Connecting State to Build Controls
