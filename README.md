@@ -20,6 +20,8 @@
 
 # 8  Real App: The Burger Builder (Basic Version)
 
+## 129 Showing and Hiding the Modal with Animation
+
 ## 128 Creating the Order Summary Modal
 
 ## 127 Adding the Order Button
