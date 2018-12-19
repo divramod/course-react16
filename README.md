@@ -20,6 +20,11 @@
 
 # 8  Real App: The Burger Builder (Basic Version)
 
+## 127 Adding the Order Button
+- insert a Modal
+- checkout Button
+- Summary
+
 ## 126 Displaying and Updating the Burger Price
 ```html
 <strong>{props.price.toFixed(2)}
