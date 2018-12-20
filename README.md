@@ -20,7 +20,12 @@
 
 # 8  Real App: The Burger Builder (Basic Version)
 
+## 136 Adding reusable Navigation Items
+- learn about Styling
+- use css snippets
+
 ## 135 Using a Logo
+- learn how webpack handles picture-imports
 
 ## 133 Adding the Price
 
