@@ -20,6 +20,8 @@
 
 # 8  Real App: The Burger Builder (Basic Version)
 
+## 133 Adding the Price
+
 ## 132 Implementing the button component
 
 ## 131 Adding a custom Button Component
