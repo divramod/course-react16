@@ -20,6 +20,8 @@
 
 # 8  Real App: The Burger Builder (Basic Version)
 
+## 131 Adding a custom Button Component
+
 ## 130 Implementing the Backdrop Component
 
 ## 129 Showing and Hiding the Modal with Animation
