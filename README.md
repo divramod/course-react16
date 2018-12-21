@@ -20,6 +20,8 @@
 
 # 8  Real App: The Burger Builder (Basic Version)
 
+## 141 More about Responsive Adjustments
+
 ## 140 Working with responsive Adjustments
 - adjust logo size in different places
 
