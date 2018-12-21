@@ -20,6 +20,9 @@
 
 # 8  Real App: The Burger Builder (Basic Version)
 
+## 140 Working with responsive Adjustments
+- adjust logo size in different places
+
 ## 139 Creating a responsive Sidedrawer
 
 ## 136 Adding reusable Navigation Items
