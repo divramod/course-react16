@@ -20,6 +20,20 @@
 
 # 8  Real App: The Burger Builder (Basic Version)
 
+## 143 Adding a SideDrawer Toogle Button
+- setState is async
+```javascript
+this.setState((prevState) => {
+    return {showSideDrawer: !prevState.showSideDrawer}
+})
+```
+
+## 142 Reusing the Backdrop
+- simply adding attribute sets it to true
+```html
+<Backdrop show />
+```
+
 ## 141 More about Responsive Adjustments
 
 ## 140 Working with responsive Adjustments
