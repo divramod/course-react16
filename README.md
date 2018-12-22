@@ -16,9 +16,42 @@
 # 12 Adding Routing to our Burger Project
 # 11 Multi-Page-Feeling in a Single-Page-App: Routing
 # 10 Burger Builder Project: Accessing a Server
+
 # 9 Reaching out to the Web (Http / Ajax)
 
+## 152 Module Introduction
+- 
+
 # 8  Real App: The Burger Builder (Basic Version)
+
+## 151 Useful Resources & Links
+
+## 150 Wrap Up
+- Aux
+- Backdrop
+- Sidedrawer
+- Lifecycle Hooks
+- BUILDING PROJECTS IS THE BEST WAY TO LEARN ANYTHING
+
+## 149 Changing the Folder Structure
+- hoc: higher order, no state change
+- containers: state change
+- components: dump
+
+## 148 Using Component Lifecycle Methods
+- used in functions which trigger sideeffects (server)
+
+## 147 Improving Performance
+
+## 146 Prop Type Validation
+- use prop-types when working in teams
+- convert from functional to class based components for using it, dont overdo it
+
+## 145 Improving the App
+- usage of prop-types
+- usage of lifecycle hooks
+
+## 144 Adding Hamburger Icon
 
 ## 143 Adding a SideDrawer Toogle Button
 - setState is async
