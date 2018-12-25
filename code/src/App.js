@@ -12,6 +12,4 @@ class App extends Component {
   }
 }
 
-import  from '';
-
 export default App;

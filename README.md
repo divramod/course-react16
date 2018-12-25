@@ -19,8 +19,66 @@
 
 # 9 Reaching out to the Web (Http / Ajax)
 
+## 167 Useful Resources & Links
+- Axios Docs: https://github.com/axios/axios
+
+## 166 Wrap Up
+- axios
+- defaults
+- interceptors
+- instances
+
+## 165 Creating and Using Axios Instances
+- you can do a half-measure by creating instances of axios
+```javascript
+// overwrites defaults, which are set
+const instance = axios.create({
+    baseURL: 'https://jsonplaceholder.typicode.com',
+});
+```
+
+
+## 164 Setting a Default Global Configuration for Axios
+```javascript
+axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';
+axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN';
+axios.defaults.headers.post['Content-Type'] = 'application/json';
+```
+
+## 163 Removing Interceptors
+```javascript
+axios.interceptors.request.eject(...);
+axios.interceptors.response.eject(...);
+```
+
+## 162 Adding Interceptors to Execute Code Globally
+- interceptors are pratical for
+    - logging
+    - errors
+    - setting headers
+- axios is really nice!
+
+## 161 Handling Errors locally
+
+## 159 Deleting Data
+
+## 158 Posting Data to the server
+
+## 156 Making a post selectable
+
+## 155 Transforming Data
+- pagination?
+- transform request
+
+## 153 Creating an HTTPRequest
+- lifecycle hook for sideeffects
+- componentDidMount
+
 ## 152 Module Introduction
-- 
+- https://jsonplaceholder.typicode.com/
+- two options for fetching ajax requests
+  - 1 XMLHttpRequest (native manually)
+  - 2 axios package (not connected to react)
 
 # 8  Real App: The Burger Builder (Basic Version)
 
