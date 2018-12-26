@@ -15,7 +15,37 @@
 # 13 Forms and Form Validation
 # 12 Adding Routing to our Burger Project
 # 11 Multi-Page-Feeling in a Single-Page-App: Routing
+
+
 # 10 Burger Builder Project: Accessing a Server
+
+## 177 Useful Resources & Links
+## 176 Removing Old Interceptors
+## 175 Retrieving Data from the Backend
+## 174 Handling Errors
+- withErrorHandler
+```javascript
+// starting with lower case, because we are not using it in jsx
+import withErrorHandler from ('.')
+export default withErrorHandler(BurgerBuilder)
+
+// return anonymous class
+return class extends Component {}
+```
+
+## 173 Displaying a Spinner while Sending a Request
+- https://projects.lukehaas.me/css-loaders/
+
+## 172 Sending a POST Request
+
+## 171 create the axios instance
+
+## 170 Creating the Firebase Project
+
+## 169 Firebase & The Right Database
+- choose the realtime database
+
+## 168 create a backend with firebase
 
 # 9 Reaching out to the Web (Http / Ajax)
 
