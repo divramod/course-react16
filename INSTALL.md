@@ -1,6 +1,7 @@
 # ESLINT
 - https://github.com/yannickcr/eslint-plugin-react/issues/447#issuecomment-184617282
 ```javascript
+// .eslintrc
 {
     "parserOptions": {
         "ecmaVersion": 7,

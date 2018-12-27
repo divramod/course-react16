@@ -14,8 +14,217 @@
 # 14 Redux
 # 13 Forms and Form Validation
 # 12 Adding Routing to our Burger Project
-# 11 Multi-Page-Feeling in a Single-Page-App: Routing
 
+# 11 Multi-Page-Feeling in a Single-Page-App: Routing
+## 210 Useful Resources & Links
+## 209 Wrap up
+## Assignment 3: Time to Practise - Routing
+## 208 Routing and Server Deployment
+## 207 Lazy Loading with React Suspense (16.6)
+## 206 Loading Routes Lazily
+## 205 Handling the 404 Case (Unknown Routes)
+## 204 Working with Guards
+## 203 Using the History Prop to Redirect (Replace)
+## 202 Conditional Redirects
+## 201 Redirecting Requests
+## 200 Creating Dynamic Nested Routes
+- use componentDidUpdate to rerender, when nested route is changed
+```javascript
+this.state.loadedPost.id !== +this.props.match.params.id
+// or
+this.state.loadedPost.id != this.props.match.params.id
+```
+
+## 199 Understanding Nested Routes
+- 
+
+## 198 Additional Information Regarding Active Links
+- edge case with "/"
+
+## 197 Navigating Programatically
+- push to history 
+```javascript
+this.props.history.push({pathname: '/' + id})
+// or
+this.props.history.push('/' + id)
+```
+
+## 196 Using Switch to Load a Single Route
+- defines that only the first match will be rendered
+- order is important
+- can be mixed
+
+
+## 195 Parsing Query Parameters & the Fragment
+```javascript
+<Link to="/my-path?start=5">Go to Start</Link>
+// or
+<Link 
+    to={{
+        pathname: '/my-path',
+        search: '?start=5'
+    }}
+    >Go to Start</Link>
+// extract
+componentDidMount() {
+    const query = new URLSearchParams(this.props.location.search);
+    for (let param of query.entries()) {
+        console.log(param); // yields ['start', '5']
+    }
+}
+// Fragment:
+// You can pass it easily like this:
+
+<Link to="/my-path#start-position">Go to Start</Link> 
+
+// or
+
+<Link
+    to={{
+        pathname: '/my-path',
+        hash: 'start-position'
+    }}
+    >Go to Start</Link>
+// React router makes it easy to extract the fragment. You can simply access props.location.hash .
+```
+
+## 194 Extracting Route Parameters
+- this.props.match.params.id 
+
+## 193 Passing Route Parameters
+```javascript
+// dynamic route
+<Route path="/:id" exact component={FullPost}>
+
+// wrap single post in posts with Link
+<Link to={post.id} key={post.id}>
+...
+```
+
+## 192 Styling the Active Route
+- NavLink instead of Link
+    - adds class="active"
+- be aware of exact
+```javascript
+// change active class name / active style
+<NavLink
+    to="/"
+    exact
+    activeClassName="my-active"
+    activeStyle={{
+        color: '#fa923f',
+        text-decoration: 'underline'
+    }}
+>
+```
+
+## 191 Absolute vs Relative Paths (Article)
+- 
+```javascript
+You learned about <Link> , you learned about the to  property it uses.
+
+The path you can use in to can be either absolute or relative. 
+
+Absolute Paths
+By default, if you just enter to="/some-path"  or to="some-path" , that's an absolute path. 
+
+Absolute path means that it's always appended right after your domain. Therefore, both syntaxes (with and without leading slash) lead to example.com/some-path .
+
+Relative Paths
+Sometimes, you might want to create a relative path instead. This is especially useful, if your component is already loaded given a specific path (e.g. posts ) and you then want to append something to that existing path (so that you, for example, get /posts/new ).
+
+If you're on a component loaded via /posts , to="new"  would lead to example.com/new , NOT example.com/posts/new . 
+
+To change this behavior, you have to find out which path you're on and add the new fragment to that existing path. You can do that with the url  property of props.match :
+
+<Link to={props.match.url + '/new'}>  will lead to example.com/posts/new  when placing this link in a component loaded on /posts . If you'd use the same <Link>  in a component loaded via /all-posts , the link would point to /all-posts/new .
+
+There's no better or worse way of creating Link paths - choose the one you need. Sometimes, you want to ensure that you always load the same path, no matter on which path you already are => Use absolute paths in this scenario.
+
+Use relative paths if you want to navigate relative to your existing path.
+```
+
+## 190 Absolute vs Relative Paths
+```javascript
+// absolute
+pathname: '/new-posts'
+
+// relative
+pathname: this.props.match.url + '/new-posts'
+```
+
+## 189 The "withRouter" HOC & Route Props
+- you can pass on props manually to child components 
+```javascript
+match={this.props.match}
+```
+- hoc withRouter
+```javascript
+export default withRouter(post);
+```
+
+## 188 Using Routing-Related Props
+- React Router enriches the props object with 
+    - history, 
+    - location
+        - hash: for example to jump to specific location
+    - match
+
+## 187 Using Links to Switch Pages
+- with Link it wont reload again
+```javascript
+// add the Link component
+<Link to="/">Home</Link>
+
+// advanced setup
+<Link to={{
+    pathname: '/new-post',
+    hash: '#submit',
+    search: '?quick-submit=true'
+}}">Home</Link>
+```
+
+## 186 Switching Between Pages
+- reloading problem
+
+## 185 Rendering Components for Routes
+```javascript
+// comment out jsx
+{/*  */}
+```
+
+```javascript
+<Route path="/posts" component={Posts} />
+```
+
+## 184 Setting Up and Rendering Routes
+
+## 183 Preparing the Project For Routing
+- Routeattributes
+    - exact
+    - path
+    - render()
+- Routes and Links are seperated
+
+## 182 react-router vs react-router-dom
+- We installed both react-router  and react-router-dom . Technically, only react-router-dom  is required for web development. It wraps react-router  and therefore uses it as a dependency. We don't need to install react-router  on our own for it to work. You can omit this installation step, I left it in there for historic reasons and because I like to emphasize that the main package is named react-router. If you ever search for assistance, you probably want to search for "react router" - that's the name of the package
+
+## 181 Setting Up the Router Package
+- react-router logic
+- react-router-dom visualization
+
+## 180 Setting Up Links
+## 179 routing and spas
+- beeing able to show different pages to the user
+- navigating
+- use a Router Package
+    - Parses URL / Paths
+    - Read Config
+    - Render / Load appropriate JSX / Component
+
+## 178 Module Intro
+- Routing is not build into the core of react
+- we use a package, which is not build by react but defacto standard
 
 # 10 Burger Builder Project: Accessing a Server
 
