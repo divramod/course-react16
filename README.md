@@ -14,19 +14,108 @@
 # 14 Redux
 # 13 Forms and Form Validation
 # 12 Adding Routing to our Burger Project
+## 224 Useful Resources & Links
+## 223 Wrap Up
+## 222 Outputting the Orders
+## 221 Fetching Orders
+## 220 Implementing Navigation Links
+## 219 Adding an Orders Page
+## 218 Order Submission & Passing Data Between Pages
+## 217 Navigating to the Contact Data Component
+## 216 Passing Ingredients via Query Params
+## 215 Navigating Back & To Next Page
+## 214 Navigating to the Checkout Page
+## 213 Setting Up Routing and Routes
+## 212 Building the Checkout Container
+## 211 Module Intro
 
 # 11 Multi-Page-Feeling in a Single-Page-App: Routing
+
 ## 210 Useful Resources & Links
+-
+
 ## 209 Wrap up
+-
+
 ## Assignment 3: Time to Practise - Routing
+- use <Link> instead of <a> because a automatically reloads the page
+- use NavLink for passing active
+- key has to go to the top element
+- to={this,props.url.match}
+- without switch everything is rendered, which matches
+- params
+- queryparams
+- new URLSearchParams(this.props.location.search) (javascript object) (minute 20)
+- componentDidUpdate()
+
 ## 208 Routing and Server Deployment
+- always load index.html also for unknown requests
+- one has to configure it by oneself
+- set basename="/my-app" when using suburl
+- important for subdirectory usage
+
 ## 207 Lazy Loading with React Suspense (16.6)
+- no need for hoc
+- always useful in conditional situatioins
+- React.Fragment --> used to wrap other compoents like aux, does not render real component
+- use default exports, named exports are not supported
+- react lazy does not support server side rendering
+```javascript
+const Posts = React.lazy(() => import('./containers/Posts'))
+<Route path="/posts" components={Posts}>
+// need to be changed to 
+<Route 
+    path="/posts"
+    render={() => (
+        <Suspense fallback={<div>Loading...</div>}>
+            <Posts />
+        </Suspense>
+    )}
+/>
+
+// 
+<React.Fragment>
+    <button> ...
+</ React.Fragment>
+```
+
+
 ## 206 Loading Routes Lazily
+- codesplitting or lazyloading
+- create-react-app (modern config) and react-router 4
+- add hoc/asyncComponent.js
+- dynamic import()
+- bundle.js vs 1.chunk.js
+
 ## 205 Handling the 404 Case (Unknown Routes)
+- redirect or 
+- catch any unknown routes
+```javascript
+<Route render={() => <h1>Not found</h1>} />
+// should always come last
+// wont work in combination with redirect
+```
+
 ## 204 Working with Guards
+- isAuthenticated is one use case
+- you control how the components are rendered
+
 ## 203 Using the History Prop to Redirect (Replace)
+- history exists in every component which is inside Router
+```javascript
+// does the same like redirect
+this.props.history.push('/posts')
+// push adds to the history stack, redirect replaces
+this.props.history.replace('/posts') // same as redirect
+```
 ## 202 Conditional Redirects
+
 ## 201 Redirecting Requests
+- possible from within switch
+```javascript
+<Rediret from="/" to"/posts" />
+```
+
 ## 200 Creating Dynamic Nested Routes
 - use componentDidUpdate to rerender, when nested route is changed
 ```javascript
